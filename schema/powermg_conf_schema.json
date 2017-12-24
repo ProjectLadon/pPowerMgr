@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "PowerMgr_Conf",
+  "type": "object",
+  "definitions": {
+    "CurrentUnits": {
+      "type": "string",
+      "enum": ["A", "mA"]
+    },
+    "VoltageUnits": {
+      "type": "string",
+      "enum": ["V", "mV"]
+    },
+    "EnergyUnits": {
+      "type": "string",
+      "enum": ["W-hr", "kJ", "%"]
+    },
+    "Voltage": {
+      "type": "object",
+      "properties": {
+        "Variable": {"type": "string"},
+        "Offset": {"type": "number"},
+        "Gain": {"type": "number"},
+        "Units": {"$ref": "#/definitions/VoltageUnits"}
+      },
+      "required": ["Variable", "Units"]
+    },
+    "Current": {
+      "type": "object",
+      "properties": {
+        "Variable": {"type": "string"},
+        "Offset": {"type": "number"},
+        "Gain": {"type": "number"},
+        "Units": {"$ref": "#/definitions/CurrentUnits"}
+      },
+      "required": ["Variable", "Units"]
+    },
+    "Energy": {
+      "type": "object",
+      "properties": {
+        "Variable": {"type": "string"},
+        "Offset": {"type": "number"},
+        "Gain": {"type": "number"},
+        "Units": {"$ref": "#/definitions/EnergyUnits"}
+      },
+      "required": ["Variable", "Units"]
+    },
+    "SheddingCondition": {
+      "type": "array",
+      "items":{
+        "type": "object",
+        "properties": {
+          "Condition": {
+            "oneOf": [
+              {"$ref": "#/definitions/Voltage"},
+              {"$ref": "#/definitions/Current"},
+              {"$ref": "#/definitions/Energy"}
+            ]
+          },
+          "Threshold": {"type": "number"},
+          "oneOf": [
+            {"GreaterThan": {"type": "null"}},
+            {"LessThan": {"type": "null"}}
+          ]
+        },
+        "required": ["Condition", "Threshold"]
+      }
+    },
+    "Battery": {
+      "type": "object",
+      "properties": {
+        "Name": {"type": "string"},
+        "BatteryVoltage": {"$ref": "#/definitions/Voltage"},
+        "ChargeCurrent": {"$ref": "#/definitions/Current"},
+        "LoadCurrent": {"$ref": "#/definitions/Current"},
+        "NotionalCapacity": {
+          "type": "object",
+          "properties": {
+            "Capacity": {"type": "number"},
+            "Units": {"$ref": "#/definitions/EnergyUnits"}
+          }
+        },
+        "TotalEnergy": {"$ref": "#/definitions/Energy"},
+        "InitialEnergy": {
+          "type": "object",
+          "properties": {
+            "Capacity": {"type": "number"},
+            "Units": {"$ref": "#/definitions/EnergyUnits"}
+          },
+      },
+      "required": ["Name", "BatteryVoltage"]
+    },
+    "Load": {
+      "type": "object",
+      "properties": {
+        "Name": {"type": "string"},
+        "Sources": {
+          "oneOf": [
+            {"type": "string"},
+            {"type": "array", "items": {"type": "string"}}
+          ]
+        },
+        "LoadVoltage": {"$ref": "#/definitions/Voltage"},
+        "LoadCurrent": {"$ref": "#/definitions/Current"},
+        "SheddingCondition": {
+          "oneOf": [
+            {"$ref": "#/definitions/SheddingCondition"},
+            {"type": "array", "items": {"$ref": "#/definitions/SheddingCondition"}}
+          ]
+        },
+        "Switch": {"type": "string"},
+        "SwitchSense": {"type": "boolean"}
+      },
+      "required": ["Name", "Sources"]
+    }
+  },
+  "properties": {
+    "Batteries": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/Battery"}
+    },
+    "Loads": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/Load"}
+    }
+  },
+  "required" : ["Batteries", "Loads"]
+}
