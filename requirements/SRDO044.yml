@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.5
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each load **may** define ```SwitchSense```, if it also defines ```Switch```. If present, this **shall** define the value published to ```Switch``` when the shedding conditions are met.

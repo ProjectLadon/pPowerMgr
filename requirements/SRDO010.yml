@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 2.5
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each analog variable **shall** have an optional ```gain``` value which is multiplied by the incoming value after the application of the offset (if any) and before unit scaling.

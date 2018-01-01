@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 2.3
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The given units **shall** be used to scale the subscribed or published value to a common internal representation.

@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 7.3
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The incoming data for each battery **shall** be integrated via the trapezoidal rule to estimate the energy remaining. The trapezoidal rule is used because it is simple to implement and test, and is robust in the presence of varying time steps.

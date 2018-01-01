@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 5.7
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The software **shall** initialize all battery objects to their starting energy level (0 if not otherwise specified).

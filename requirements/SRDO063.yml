@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 5.8
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The software **shall** build a list of all analog input variables to subscribe to.

@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 3.6
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The initial charge state of the battery **may** be defined in the configuration. Failure to define it **may** result in negative energy values being published.

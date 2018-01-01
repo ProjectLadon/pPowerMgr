@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 3.7
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  If battery voltage, charge, and load currents are available, the battery object **shall** track the energy content of the battery and publish it to an energy output variable, if defined.

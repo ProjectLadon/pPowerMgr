@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.7.7
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The condition **may** have a null element of either ```GreaterThan``` or ```LessThan```. If present, the software **shall** judge the condition as true if the variable is greater than or less than the threshold, respectively.

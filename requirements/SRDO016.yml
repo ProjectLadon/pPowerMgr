@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 2.6.1.4
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The resulting value **shall** be converted to an internal representation based on the supplied units.

@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.4
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each load **may** define a ```Switch``` element which is the name of a BINARY variable published when the shedding conditions are met.

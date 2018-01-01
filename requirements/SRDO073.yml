@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 8.3
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The software **shall** publish the results for eache shedding condition calculation.

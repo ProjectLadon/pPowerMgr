@@ -39,8 +39,6 @@
       "type": "object",
       "properties": {
         "Variable": {"type": "string"},
-        "Offset": {"type": "number"},
-        "Gain": {"type": "number"},
         "Units": {"$ref": "#/definitions/EnergyUnits"}
       },
       "required": ["Variable", "Units"]

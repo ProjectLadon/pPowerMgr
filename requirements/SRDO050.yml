@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.7.4
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The results from each member array **shall** be OR'd together to produce the final result.

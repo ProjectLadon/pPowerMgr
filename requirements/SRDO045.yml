@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.6
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each load that defines a switch variable **must** define at least one ```SheddingCondition```.

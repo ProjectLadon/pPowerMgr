@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 6.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  On connection, the shoftware **shall** register for all subscribed variables.

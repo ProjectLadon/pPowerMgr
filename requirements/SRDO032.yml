@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 3.2
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each battery object **shall** subscribe to a variable that reads the battery voltage.

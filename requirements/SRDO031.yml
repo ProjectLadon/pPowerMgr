@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 3.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each battery managed by this power manager **shall** be configured by a single ```Battery``` entry.

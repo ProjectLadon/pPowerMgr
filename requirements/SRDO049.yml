@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.7.3
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The results from the conditions in each member array **shall** be AND'd together.

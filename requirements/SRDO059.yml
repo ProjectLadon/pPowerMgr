@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 5.4
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The configuration JSON **must** conform to the schema defined in schema/powermgr_conf_schema.json.

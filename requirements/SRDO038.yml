@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 3.8
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  If the battery object has the information required to calculate total energy, it **may** define an energy output variable. If the output is defined but the required input information is not, the battery object **shall** print an error and force this module to exit.

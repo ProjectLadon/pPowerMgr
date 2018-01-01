@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.2
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each load **shall** define one or more sources, which **must** be the names of previously configured battery objects.

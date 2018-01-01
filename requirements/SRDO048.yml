@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.7.2
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each condition **shall** produce a boolean value.

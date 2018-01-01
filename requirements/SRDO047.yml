@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.7.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The ```SheddingCondition``` element **must** consist of one or more arrays of conditions.

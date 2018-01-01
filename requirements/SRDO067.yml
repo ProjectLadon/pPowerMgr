@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 7.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  On receipt of new mail, all analog variables that receive new data **shall** be updated.

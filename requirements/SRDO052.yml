@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.7.6
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each condition **shall** have a threshold value, which is a floating point number in the same units as the variable.

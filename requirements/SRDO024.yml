@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 2.6.3.2
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Energy ouput variables **shall** name a MOOS community variable of type ```DOUBLE``` and publish to that variable.

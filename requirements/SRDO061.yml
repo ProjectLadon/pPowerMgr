@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 5.6
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The software **shall** build maps of ```Battery``` and ```Load``` objects from the the configuration JSON.

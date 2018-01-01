@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 3.3
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each battery object **may** subscribe to a variable that reads the battery charge current.

@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 5.3
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  If both ```conf``` and ```confFile``` are present, this module **shall** exit with an error.

@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 3.5
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  The nominal capacity of the battery **may** be defined in the configuration. This information is required in order to calculate the percentage charge state. If it is not present, the battery object **shall** throw an error if the percentage charge is requested.

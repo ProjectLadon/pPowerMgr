@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 7.2
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Upon receipt of new mail, any battery object with updated input data **shall** update its internal estimate of energy remaining.

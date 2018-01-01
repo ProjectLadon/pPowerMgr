@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 2.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each analog variable **shall** specify a MOOS variable of type ```DOUBLE``` as the input or output variable and subscribe to or publish that variable, as appropriate..

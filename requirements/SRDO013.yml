@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 2.6.1.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Voltage variables **shall** name a MOOS community variable of type ```DOUBLE``` to subscribe to.

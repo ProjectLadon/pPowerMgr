@@ -1,0 +1,9 @@
+active: true
+derived: false
+level: 4.7.5
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Each condition **shall** name a source variable of any of the analog input types (voltage, current, or energy).
